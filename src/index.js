@@ -6,11 +6,9 @@ import 'antd/dist/antd.css';
 import './index.css';
 
 const app = (
-    <BrowserRouter>
-      <React.StrictMode>
-          <App />
-      </React.StrictMode>
-    </BrowserRouter>
+  <BrowserRouter>
+    <App />
+  </BrowserRouter>
 );
 
 ReactDOM.render(app, document.getElementById('root'));
