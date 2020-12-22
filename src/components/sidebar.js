@@ -14,7 +14,7 @@ function Sidebar({ collapsed }) {
       collapsedWidth="0"
       collapsible
       collapsed={collapsed}
-      width="350px"
+      width="330px"
       style={{
         minHeight: '100vh',
         padding: '50px 0',
