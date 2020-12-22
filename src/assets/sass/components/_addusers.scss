@@ -1,0 +1,45 @@
+.addusers {
+  margin-top: 20px;
+
+  &-header {
+    h4,
+    p {
+      color: darken($darkgrey, 10%);
+    }
+  }
+
+  &-slider {
+    margin-top: 5px;
+    position: relative;
+
+    &-header {
+      position: relative;
+      top: 10px;
+      display: flex;
+      justify-content: space-between;
+
+      .min,
+      .max {
+        color: $black;
+        font-weight: 600;
+      }
+    }
+  }
+}
+
+.ant {
+  &-tooltip-arrow {
+    display: none !important;
+  }
+  &-tooltip-inner {
+    background-color: transparent !important;
+    color: $blue !important;
+    font-weight: bold;
+    box-shadow: none !important;
+  }
+
+  &-tooltip-content {
+    position: relative;
+    top: 10px !important;
+  }
+}
