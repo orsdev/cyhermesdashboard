@@ -2,6 +2,7 @@ import React from 'react';
 import { Layout, Menu } from 'antd';
 import PropTypes from 'prop-types';
 import Logo from '../assets/images/logo.png';
+import Quote from '../assets/images/quote.png';
 
 const { Sider } = Layout;
 
@@ -37,7 +38,7 @@ function Sidebar({ collapsed }) {
       </Menu>
       <div className="quote">
         <blockquote>
-          <span>&ldquo;</span>
+          <img src={Quote} alt="Quote" />
           <p>
             Sucess is not final; failure is not fatal: it is the
             courage to continue that counts.
