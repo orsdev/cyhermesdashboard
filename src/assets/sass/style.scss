@@ -1,2 +1,18 @@
 @import './utils/colors.scss';
 @import './components/loading-screen.scss';
+@import './components/sidebar.scss';
+@import './components/main.scss';
+@import './components/plan.scss';
+@import './components/addusers.scss';
+@import './components/modules.scss';
+@import './components/buttons.scss';
+
+.ant-layout-header {
+  background: transparent;
+
+  svg {
+    fill: $blue;
+    width: 30px;
+    height: 30px;
+  }
+}
