@@ -1,0 +1,135 @@
+.plan {
+  position: relative;
+
+  &-container {
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+
+  &-select-text {
+    color: $darkgrey;
+    font-size: 1.2rem;
+  }
+
+  &-premium {
+    padding: 20px 25px;
+    position: relative;
+    box-shadow: 0 3rem 5rem lighten($skyblue, 10%);
+
+    &-start-from {
+      color: $yellow;
+    }
+
+    &-currency,
+    &-annum,
+    &-start-from,
+    &-users {
+      font-weight: 600;
+      font-size: 1.3rem;
+    }
+
+    &-currency,
+    &-annum,
+    p {
+      color: $darkgrey;
+    }
+
+    &-balance {
+      font-weight: 700;
+      color: $black;
+      font-size: 1.5rem;
+    }
+
+    &-title {
+      margin-top: 20px;
+      font-weight: 700;
+      color: $black;
+    }
+
+    &-users {
+      font-size: 1.1rem;
+      margin-top: -20px;
+
+      span {
+        display: inline-block;
+        padding: 0 5px;
+        color: $yellow;
+        font-size: 3rem;
+        font-weight: bold;
+      }
+    }
+  }
+
+  &-basic {
+    position: relative;
+    padding: 20px 25px;
+    background: lighten($skyblue, 16%);
+    box-shadow: 2px 4px 8px 0.1px gainsboro;
+    border: 1px solid $blue;
+    border-radius: 6px;
+
+    &-selected {
+      position: absolute;
+      right: -10px;
+      top: -20px;
+      font-size: 2.5rem;
+      color: white;
+      font-weight: 100;
+      border-radius: 50%;
+      width: 40px;
+      height: 40px;
+      background: $green;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    &-title {
+      font-weight: 700;
+      color: $blue;
+    }
+
+    h6,
+    h5,
+    p {
+      color: $darkgrey;
+    }
+
+    h6 {
+      font-weight: 600;
+      font-size: 1.1rem;
+    }
+
+    h5 {
+      margin-top: 10px;
+      margin-bottom: 10px;
+      font-weight: 600;
+      display: flex;
+      align-items: center;
+
+      span {
+        display: block;
+        width: 60px;
+      }
+
+      hr {
+        display: block;
+        width: calc(100% - 60px);
+        border: 2px dashed $skyblue;
+      }
+    }
+
+    p {
+      font-weight: 500;
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .plan {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+}
