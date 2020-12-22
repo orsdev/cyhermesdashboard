@@ -53,7 +53,8 @@
     grid-template-columns: 1fr;
 
     &-balance {
-      margin-top: 20px;
+      justify-self: start;
+      margin-bottom: 10px;
     }
   }
 }

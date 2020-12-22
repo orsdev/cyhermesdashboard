@@ -1,0 +1,16 @@
+.main {
+  .ant-layout {
+    padding: 0;
+    padding-left: 80px !important;
+    padding-right: 80px !important;
+  }
+}
+
+@media (max-width: 600px) {
+  .main {
+    .ant-layout {
+      padding-left: 30px !important;
+      padding-right: 30px !important;
+    }
+  }
+}
